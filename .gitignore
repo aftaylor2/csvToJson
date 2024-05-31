@@ -20,6 +20,7 @@
 *$py.class
 CMakeCache.txt
 *.cmake
+CMakeFiles
 
 # Ignore log files and databases
 *.log
