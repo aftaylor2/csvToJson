@@ -16,10 +16,11 @@ void post_json(const char *url, const char *json_data, const char *token) {
     if (curl) {
         struct curl_slist *headers = NULL;
         headers = curl_slist_append(headers, "Content-Type: application/json");
-        
+
         if (token != NULL) {
             char auth_header[AUTH_HEADER_SIZE];
-            snprintf(auth_header, sizeof(auth_header), "Authorization: Bearer %s", token);
+            snprintf(auth_header, sizeof(auth_header),
+                     "Authorization: Bearer %s", token);
             headers = curl_slist_append(headers, auth_header);
         }
 
@@ -29,7 +30,8 @@ void post_json(const char *url, const char *json_data, const char *token) {
 
         res = curl_easy_perform(curl);
         if (res != CURLE_OK) {
-            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+            fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                    curl_easy_strerror(res));
         }
 
         curl_easy_cleanup(curl);
@@ -40,7 +42,9 @@ void post_json(const char *url, const char *json_data, const char *token) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2 || argc > 4) {
-        fprintf(stderr, "Usage: %s <csv_file_path> [<api_endpoint>] [<bearer_token>]\n", argv[0]);
+        fprintf(stderr,
+                "Usage: %s <csv_file_path> [<api_endpoint>] [<bearer_token>]\n",
+                argv[0]);
         return EXIT_FAILURE;
     }
 

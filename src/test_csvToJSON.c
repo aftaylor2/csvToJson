@@ -9,7 +9,9 @@ void test_csv_to_json(void) {
     char *json_data = csv_to_json(csv_file_path);
 
     // Expected JSON output
-    const char *expected_json = "[{\"firstName\":\"John\",\"lastName\":\"Doe\",\"dob\":\"1985-08-01\"},{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"dob\":\"1991-04-20\"}]";
+    const char *expected_json =
+        "[{\"firstName\":\"John\",\"lastName\":\"Doe\",\"dob\":\"1985-08-01\"},"
+        "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"dob\":\"1991-04-20\"}]";
 
     // Print the generated and expected JSON for debugging
     printf("Generated JSON: %s\n", json_data);
@@ -17,7 +19,9 @@ void test_csv_to_json(void) {
 
     // Check if the generated JSON matches the expected JSON
     if (strcmp(json_data, expected_json) != 0) {
-        fprintf(stderr, "Assertion failed: generated JSON does not match expected JSON\n");
+        fprintf(
+            stderr,
+            "Assertion failed: generated JSON does not match expected JSON\n");
         exit(EXIT_FAILURE);
     }
 
@@ -29,4 +33,3 @@ int main(void) {
     printf("All tests passed.\n");
     return 0;
 }
-
