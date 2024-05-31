@@ -1,7 +1,7 @@
 
 # CSV to JSON Converter
 
-This project provides a simple C program that converts CSV data to JSON and makes an HTTPS POST request to a specified API endpoint. Additionally, the project includes a test suite to verify the functionality of the CSV to JSON conversion
+This project provides a simple C program that converts CSV data to JSON and makes an optional HTTPS POST request to a specified API endpoint. Additionally, the project includes a test suite to verify the functionality of the CSV to JSON conversion
 
 ## Notice
 
