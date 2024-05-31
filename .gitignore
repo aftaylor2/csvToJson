@@ -1,0 +1,59 @@
+# Ignore binary files
+/bin/
+/*.o
+/*.out
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+
+# Ignore build files
+/build/
+/dist/
+/.mypy_cache/
+/.pytest_cache/
+/node_modules/
+/.coverage
+*.cover
+*.py[cod]
+*$py.class
+CMakeCache.txt
+*.cmake
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore OS-specific files
+.DS_Store
+._.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+*.swo
+*.old
+*.orig
+
+# Version Control (Git, SVN, etc)
+.git
+.svn
+.git*
+
+# Ignore editor directories and files
+.idea/
+.vscode/
+*.code-workspace
+
+# Do not ignore
+!.gitignore
+!.vscode
+!.vscode/settings.json

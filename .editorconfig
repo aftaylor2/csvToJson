@@ -1,0 +1,25 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+# Indentation
+indent_style = space
+indent_size = 4
+
+# Line endings
+end_of_line = lf
+charset = utf-8
+
+# Trim trailing whitespace and add final newline
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.c]
+# Specific to C files
+indent_size = 4
+
+[*.h]
+# Specific to header files
+indent_size = 4

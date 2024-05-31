@@ -1,0 +1,3 @@
+/Users/ataylor/Desktop/csvToJson/CMakeFiles/csvToJSON.dir
+/Users/ataylor/Desktop/csvToJson/CMakeFiles/edit_cache.dir
+/Users/ataylor/Desktop/csvToJson/CMakeFiles/rebuild_cache.dir
