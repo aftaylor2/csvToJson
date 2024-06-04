@@ -25,7 +25,7 @@ check_program curl-config
 
 # Get curl compiler and linker flags
 CURL_CFLAGS=$(curl-config --cflags)
-CURL_LDFLAGS=$(curl-config --libs)
+CURL_LDFLAGS="" #$(curl-config --libs)
 
 # Create Makefile
 cat <<EOL >Makefile
